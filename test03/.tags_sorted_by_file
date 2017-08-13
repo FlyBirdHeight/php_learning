@@ -1,0 +1,21 @@
+closure	test01.php	/^	$closure = function($name){$/;"	v
+numbersPlusOne	test02.php	/^	$numbersPlusOne = array_map(function ($number){$/;"	v
+clay	test03.php	/^	$clay = enclosePerson('Clay');$/;"	v
+enclosePerson	test03.php	/^	function enclosePerson($name){$/;"	f
+App	test04.php	/^	class App$/;"	c
+addRoute	test04.php	/^		public function addRoute($routePath,$routeCallback){$/;"	f
+dispatch	test04.php	/^		public function dispatch($currentPath)$/;"	f
+responseBody	test04.php	/^		protected $responseBody = 'Hello world';$/;"	v
+responseContentType	test04.php	/^		protected $responseContentType = 'text\/html';$/;"	v
+responseStatus	test04.php	/^		protected $responseStatus = '200 OK';$/;"	v
+routePath	test04.php	/^			foreach ($this->routes as $routePath => $callback) {$/;"	v
+routes	test04.php	/^		protected $routes = array();$/;"	v
+app	test05.php	/^	$app = new App();$/;"	v
+responseBody	test05.php	/^		$this->responseBody = '{"name":"Josh"}';$/;"	v
+responseContentType	test05.php	/^		$this->responseContentType = 'application\/json;charset=utf8';$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

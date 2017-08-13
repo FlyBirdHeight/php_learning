@@ -1,0 +1,12 @@
+dateInterval	test01.php	/^	$dateInterval = date_interval_create_from_date_string('-1 day');$/;"	v
+datePeriod	test01.php	/^	$datePeriod = new datePeriod($dateStart,$dateInterval,3);$/;"	v
+dateStart	test01.php	/^	$dateStart = new \\DateTime();$/;"	v
+datetime	test01.php	/^	$datetime = new \\DateTime('2017-08-04 11:29:00');$/;"	v
+interval	test01.php	/^	$interval = new dateInterval('P2W');$/;"	v
+key	test01.php	/^	foreach ($datePeriod as $key => $value) {$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

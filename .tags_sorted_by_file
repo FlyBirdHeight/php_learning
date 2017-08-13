@@ -1,0 +1,83 @@
+dateInterval	datetimeʵ��\test01.php	/^	$dateInterval = date_interval_create_from_date_string('-1 day');$/;"	v
+datePeriod	datetimeʵ��\test01.php	/^	$datePeriod = new datePeriod($dateStart,$dateInterval,3);$/;"	v
+dateStart	datetimeʵ��\test01.php	/^	$dateStart = new \\DateTime();$/;"	v
+datetime	datetimeʵ��\test01.php	/^	$datetime = new \\DateTime('2017-08-04 11:29:00');$/;"	v
+interval	datetimeʵ��\test01.php	/^	$interval = new dateInterval('P2W');$/;"	v
+key	datetimeʵ��\test01.php	/^	foreach ($datePeriod as $key => $value) {$/;"	v
+Task	php_learning\01\index.php	/^class Task {$/;"	c
+__construct	php_learning\01\index.php	/^	public function __construct($description){$/;"	f
+complete	php_learning\01\index.php	/^	public function complete(){$/;"	f
+completed	php_learning\01\index.php	/^		$this->completed = true;$/;"	v
+completed	php_learning\01\index.php	/^	protected $completed = false;$/;"	v
+dd	php_learning\01\index.php	/^function dd($string){$/;"	f
+description	php_learning\01\index.php	/^		$this->description = $description;$/;"	v
+description	php_learning\01\index.php	/^	protected $description;$/;"	v
+description	php_learning\01\index.php	/^	public function description(){$/;"	f
+isComplete	php_learning\01\index.php	/^	public function isComplete(){$/;"	f
+task	php_learning\01\index.php	/^$task = [$/;"	v
+__construct	test01\test01.php	/^public function __construct($url)$/;"	f
+ch	test01\test01.php	/^	$ch = curl_init();$/;"	v
+getContent	test01\test01.php	/^public function getContent()$/;"	f
+getId	test01\test01.php	/^public function getId()$/;"	f
+html	test01\test01.php	/^	$html = curl_exec($ch);$/;"	v
+url	test01\test01.php	/^	$this->url = $url;$/;"	v
+url	test01\test01.php	/^protected $url;$/;"	v
+StreamDocument	test01\test02.php	/^class StreamDocument implements Documentable$/;"	c
+__construct	test01\test02.php	/^	public function __construct($resource,$buffer = 4096){$/;"	f
+buffer	test01\test02.php	/^		$this->buffer = $buffer;$/;"	v
+buffer	test01\test02.php	/^	protected $buffer;$/;"	v
+getContent	test01\test02.php	/^	public function getContent()$/;"	f
+getId	test01\test02.php	/^	public function getId()$/;"	f
+resource	test01\test02.php	/^		$this->resource = $resource;$/;"	v
+resource	test01\test02.php	/^	protected $resource;$/;"	v
+streamContent	test01\test02.php	/^			$streamContent = fread($this->resource,$this->buffer);$/;"	v
+streamContent	test01\test02.php	/^		$streamContent = '';$/;"	v
+CommandOutputDocument	test01\test03.php	/^class CommandOutputDocument implements Documentable$/;"	c
+__construct	test01\test03.php	/^	function __construct($command)$/;"	f
+command	test01\test03.php	/^		$this->command = $command;$/;"	v
+command	test01\test03.php	/^	protected $command;$/;"	v
+getContent	test01\test03.php	/^	public function getContent(){$/;"	f
+getId	test01\test03.php	/^	public function getId(){$/;"	f
+myGenerator	test02\test01.php	/^		public function myGenerator()\/\/简单生成器$/;"	f
+test01	test02\test01.php	/^	class test01$/;"	c
+key	test02\test02.php	/^	foreach ($test->myGenerator() as $key => $value) {\/\/生成器生成数据对系统内存开销小，比数组小多了$/;"	v
+test	test02\test02.php	/^	$test = new test01();$/;"	v
+closure	test03\test01.php	/^	$closure = function($name){$/;"	v
+numbersPlusOne	test03\test02.php	/^	$numbersPlusOne = array_map(function ($number){$/;"	v
+clay	test03\test03.php	/^	$clay = enclosePerson('Clay');$/;"	v
+enclosePerson	test03\test03.php	/^	function enclosePerson($name){$/;"	f
+App	test03\test04.php	/^	class App$/;"	c
+addRoute	test03\test04.php	/^		public function addRoute($routePath,$routeCallback){$/;"	f
+dispatch	test03\test04.php	/^		public function dispatch($currentPath)$/;"	f
+responseBody	test03\test04.php	/^		protected $responseBody = 'Hello world';$/;"	v
+responseContentType	test03\test04.php	/^		protected $responseContentType = 'text\/html';$/;"	v
+responseStatus	test03\test04.php	/^		protected $responseStatus = '200 OK';$/;"	v
+routePath	test03\test04.php	/^			foreach ($this->routes as $routePath => $callback) {$/;"	v
+routes	test03\test04.php	/^		protected $routes = array();$/;"	v
+app	test03\test05.php	/^	$app = new App();$/;"	v
+responseBody	test03\test05.php	/^		$this->responseBody = '{"name":"Josh"}';$/;"	v
+responseContentType	test03\test05.php	/^		$this->responseContentType = 'application\/json;charset=utf8';$/;"	v
+currentHashAlgorithm	test05\test02.php	/^		$currentHashAlgorithm = PASSWORD_DEFAULT;$/;"	v
+currentHashOptions	test05\test02.php	/^		$currentHashOptions = array('cost' => 15);$/;"	v
+email	test05\test02.php	/^		$email = filter_input(INPUT_POST,'email');$/;"	v
+password	test05\test02.php	/^		$password = filter_input(INPUT_POST, 'password');$/;"	v
+passwordNeedsRehash	test05\test02.php	/^		$passwordNeedsRehash = password_needs_rehash($user->password_hash,$currentHashAlgorithm,$currentHashOptions);$/;"	v
+user	test05\test02.php	/^		$user = User::findByEmail($email);$/;"	v
+email	test06\sql.php	/^	$email = filter_input(INPUT_GET,'email');$/;"	v
+key	test06\sql.php	/^	foreach ($results as $key => $result) {$/;"	v
+results	test06\sql.php	/^	$results = $statement->fetchAll(PDO::FETCH_ASSOC);$/;"	v
+sql	test06\sql.php	/^	$sql = 'SELECT id FROM users WHERE email= :email';#:email是占位符，为了达到预处理的效果$/;"	v
+statement	test06\sql.php	/^	$statement = $pdo->prepare($sql);$/;"	v
+handle	wrapper\test01.php	/^	$handle = fopen('something.php','rb');$/;"	v
+str	wrapper\test01.php	/^		$str = $str.fread($handle,1024);$/;"	v
+str	wrapper\test01.php	/^	$str = "";$/;"	v
+handle	wrapper\test02.php	/^	$handle = fopen('something.php', 'rb');$/;"	v
+context	wrapper\wrapper_context.php	/^	$context = stream_context_create($/;"	v
+requestBody	wrapper\wrapper_context.php	/^	$requestBody = '{"username":"josh"}';$/;"	v
+response	wrapper\wrapper_context.php	/^	$response = file_get_contents('https:\/\/my-api.com\/users',false,$context);\/\/对流进行封装$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

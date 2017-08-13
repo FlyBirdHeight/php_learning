@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+App	.\test04.php	/^	class App$/;"	c
+addRoute	.\test04.php	/^		public function addRoute($routePath,$routeCallback){$/;"	f
+app	.\test05.php	/^	$app = new App();$/;"	v
+clay	.\test03.php	/^	$clay = enclosePerson('Clay');$/;"	v
+closure	.\test01.php	/^	$closure = function($name){$/;"	v
+dispatch	.\test04.php	/^		public function dispatch($currentPath)$/;"	f
+enclosePerson	.\test03.php	/^	function enclosePerson($name){$/;"	f
+numbersPlusOne	.\test02.php	/^	$numbersPlusOne = array_map(function ($number){$/;"	v
+responseBody	.\test04.php	/^		protected $responseBody = 'Hello world';$/;"	v
+responseBody	.\test05.php	/^		$this->responseBody = '{"name":"Josh"}';$/;"	v
+responseContentType	.\test04.php	/^		protected $responseContentType = 'text\/html';$/;"	v
+responseContentType	.\test05.php	/^		$this->responseContentType = 'application\/json;charset=utf8';$/;"	v
+responseStatus	.\test04.php	/^		protected $responseStatus = '200 OK';$/;"	v
+routePath	.\test04.php	/^			foreach ($this->routes as $routePath => $callback) {$/;"	v
+routes	.\test04.php	/^		protected $routes = array();$/;"	v

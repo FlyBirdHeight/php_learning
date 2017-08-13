@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Task	.\01\index.php	/^class Task {$/;"	c
+__construct	.\01\index.php	/^	public function __construct($description){$/;"	f
+complete	.\01\index.php	/^	public function complete(){$/;"	f
+completed	.\01\index.php	/^		$this->completed = true;$/;"	v
+completed	.\01\index.php	/^	protected $completed = false;$/;"	v
+dd	.\01\index.php	/^function dd($string){$/;"	f
+description	.\01\index.php	/^		$this->description = $description;$/;"	v
+description	.\01\index.php	/^	protected $description;$/;"	v
+description	.\01\index.php	/^	public function description(){$/;"	f
+isComplete	.\01\index.php	/^	public function isComplete(){$/;"	f
+task	.\01\index.php	/^$task = [$/;"	v
