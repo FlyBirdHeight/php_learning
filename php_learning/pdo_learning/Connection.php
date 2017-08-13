@@ -1,9 +1,14 @@
 <?php 
 	class Connection
 	{
-		public function make(){
+		public function make($config){
 			try {
-				$pdo = new PDO('mysql:host=127.0.0.1;dbname=books','root','');
+				return new PDO(
+					"$config['connection'];dbname=$config['name']",
+					"$config['username']",
+					$config['password'],
+					$config['options']
+				);
 			} catch (PDOException $e) {
 				die('do not connect database');
 			}

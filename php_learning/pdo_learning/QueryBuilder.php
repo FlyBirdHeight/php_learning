@@ -9,11 +9,11 @@
 
 
 		public function selectAll($table){
-			$statement = $pdo->prepare("select * from users");
+			$statement = $this->pdo->prepare("select * from $table");
 
 			$statement->execute();
 
-			$task = $statement->fetchAll(PDO::FETCH_OBJ);
+			return $statement->fetchAll(PDO::FETCH_OBJ);
 		}
 
 		public function get($value){
