@@ -3,17 +3,27 @@
 	class Route
 	{
 
-		protected $routes;
+		protected $routes = [];
 
-		function define($routes){
+
+		public static function load($file){
+
+			// $router = new static;
+
+			require $file;
+
+			// return $router;
+		}
+
+		public function define($routes){
 			$this->routes = $routes;
 		}
 
 
-		function direct($uri){
+		public function direct($uri){
 
 			if (array_key_exists($uri,$this->routes)) {
-				# code...
+				
 				return $this->routes[$uri];
 
 				throw new Exception('No route find for this URI!'); 
@@ -21,19 +31,6 @@
 
 		}
 
-
-
-
-
-
-
-
-
 	}
-
-
-
-
-
 
  ?>

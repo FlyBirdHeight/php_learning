@@ -1,20 +1,8 @@
 <?php 
-	$route -> define( [
-		'' => 'controller/idnex.php',
-		'about' => 'controller/about.php',
-		'about/culture' => 'controller/about-culture.php',
-		'contact' => 'controller/contact.php',
-	]);
-
-
-
-
-
-
-
-
-
-
-
-
- ?>
+	$router = [
+		'' => 'views/index.view.php',
+		'/about' => 'views/about.view.php',
+		'/about/culture' => 'views/about-culture.view.php',
+		'/contact' => 'views/contact.view.php',
+	];
+ 
