@@ -6,7 +6,6 @@
 
 	$bulider->get($task);
 
-	return "views/index.view.php";
 	// function dd($string){
 	// 	echo "<pre>";
 	// 	var_dump($string);
@@ -26,5 +25,3 @@
 	// // dd($task);
 	
 	
-
- ?>
